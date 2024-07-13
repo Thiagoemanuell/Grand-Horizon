@@ -58,7 +58,7 @@ namespace TE
 
         private void HandleRollInput(float delta)
         {
-            b_Input = inputActions.PlayerActions.Roll.phase == UnityEngine.InputSystem.InputActionPhase.Started;
+            b_Input = inputActions.PlayerActions.Roll.phase == UnityEngine.InputSystem.InputActionPhase.Performed;         
 
             if (b_Input)
             {
@@ -67,10 +67,10 @@ namespace TE
             }
             else
             {
-                if (rollInputTimer > 0 && rollInputTimer < 0.5f)
+                if (rollInputTimer > 0 && rollInputTimer < 0.3f)
                 {
                     sprintFlag = false;
-                    rollFlag = true;
+                    rollFlag = true;                    
                 }
 
                 rollInputTimer = 0;
