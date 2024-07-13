@@ -16,9 +16,9 @@ namespace TE
 
         public static CameraHandler singleton;
 
-        public float lookSpeed = 0.1f;
-        public float followSpeed = 0.1f;
+        public float lookSpeed = 0.01f;
         public float pivotSpeed = 0.03f;
+        public float followSpeed = 0.1f;
 
         private float targetPosition;
         private float defaultPosition;
