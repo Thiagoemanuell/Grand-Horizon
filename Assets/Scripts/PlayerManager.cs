@@ -21,13 +21,14 @@ namespace TE
         public bool isGrounded;
 
 
-        private void Awake()
+        /*private void Awake()
         {
             cameraHandler = CameraHandler.singleton;
-        }
+        }*/
 
         void Start()
         {
+            cameraHandler = CameraHandler.singleton;
             inputHandler = GetComponent<InputHandler>();
             anim = GetComponentInChildren<Animator>();
             playerLocomotion = GetComponent<PlayerLocomotion>();
