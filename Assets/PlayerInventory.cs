@@ -8,7 +8,7 @@ namespace TE
     {
         WeaponSlotManager weaponSlotManager;
 
-        public WeaponItem rigthWeapon;
+        public WeaponItem rightWeapon;
         public WeaponItem leftWeapon;
 
         private void Awake()
@@ -18,7 +18,7 @@ namespace TE
 
         private void Start()
         {
-            weaponSlotManager.LoadWeaponOnSlot(rigthWeapon, false);
+            weaponSlotManager.LoadWeaponOnSlot(rightWeapon, false);
             weaponSlotManager.LoadWeaponOnSlot(leftWeapon, true);
         }
     }

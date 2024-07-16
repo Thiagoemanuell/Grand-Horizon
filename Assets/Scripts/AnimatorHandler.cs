@@ -77,7 +77,7 @@ namespace TE
             }
             #endregion
 
-            if (isSprinting && verticalMovement > 0)
+            if (isSprinting)
             {
                 v = 2;
                 h = horizontalMovement;
